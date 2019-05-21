@@ -15,35 +15,58 @@
 
 <body>
 	<!-- As a heading -->
-	<nav class="navbar navbar-dark bg-danger ">
-		<span class="navbar-brand mb-0 h1 display-4">Shakthi Vinayaga Wood Carving</span>
-	</nav>
+	<nav class="navbar navbar-expand-md navbar-dark bg-danger text-white border border-white">
+			<a class="navbar-brand" href="#">Shakthi Murugan Timbers</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+				aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link text-white" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="https://shakthimurugantimbers.github.io/shakthi"
+							target="_blank">Wood Calculation</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 	<div class="container p-5">
-		<div class="grith form-group">
-			<label for="grith_input">Grith:</label>
-			<input type="number" id="grith_input" value="0" class="form-control mb-3">
-
-		</div>
-		<div class="form-group">
-				<label for="grith_input">Grith Unit:</label>
-			<select id="grith_select" class="form-control">
-				<option value="in" selected>Inches</option>
-				<option value="cm">Cm</option>
-				<option value="m">Meter</option>
-				<option value="ft">Feet</option>
-			</select>
-		</div>
-		<div class="length mb-3 form-group">
-			<label for="length_input">Length:</label>
-			<input type="number" id="length_input" value="0" class="form-control">
+		<div class="row">
+			<div class="col-4">
+				<div class="grith form-group">
+					<label for="grith_input">Grith:</label>
+					<input type="number" id="grith_input" value="0" class="form-control mb-3">
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="form-group">
+					<label for="grith_input">Grith Unit:</label>
+					<select id="grith_select" class="form-control">
+						<option value="in" selected>Inches</option>
+						<option value="cm">Cm</option>
+						<option value="m">Meter</option>
+						<option value="ft">Feet</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="length mb-3 form-group">
+					<label for="length_input">Length:</label>
+					<input type="number" id="length_input" value="0" class="form-control">
+				</div>
+			</div>
 		</div>
 		<div class="card card-body boder-primary text-center border border-danger">
 			<h3 class="text-danger">In Cubic Feet: <strong><span class="answer"></span></strong></h3>
 		</div>
 	</div>
 
-	<script src="http://code.jquery.com/jquery-3.4.0.min.js"
-		integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 	</script>
